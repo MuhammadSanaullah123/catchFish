@@ -1,0 +1,507 @@
+/*<----------------------------------------------------Header:Start----------------------------------------------------> */
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  padding: 0 70px 0 70px;
+  position: fixed;
+  width: -webkit-fill-available;
+  .logoImg {
+    @media (max-width: 480px) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .desktopLinkDiv {
+    display: flex !important;
+    @media (max-width: 830px) {
+      display: none !important;
+    }
+  }
+  .linkDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    a {
+    }
+  }
+  .burgerIcon {
+    width: 30px;
+    height: 30px;
+    fill: #fff !important;
+    display: none;
+    font-size: 14px;
+    cursor: pointer;
+    @media (max-width: 830px) {
+      display: flex;
+    }
+  }
+  .mobileDiv {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+    background-color: rgb(237, 103, 214);
+    position: absolute;
+    top: 8em;
+    left: 5%;
+    border-radius: 6px;
+    padding: 20px 0 20px 0;
+    div {
+      margin-top: 10px;
+    }
+    a {
+      margin-left: 20px;
+    }
+  }
+}
+
+/*<----------------------------------------------------Header:End----------------------------------------------------> */
+
+/*<----------------------------------------------------Home:Start----------------------------------------------------> */
+#home {
+  display: flex;
+  flex-direction: column;
+  #firstSection {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(-15deg, rgb(237, 103, 214) 46%, #e840cc 46%);
+    z-index: -5;
+    padding-bottom: 50px;
+    /* padding-top: 200px; */
+    @media (max-width: 480px) {
+      padding-top: 70px;
+    }
+    .personDiv {
+      display: flex;
+      justify-content: space-evenly;
+      position: relative;
+
+      @media (max-width: 625px) {
+        justify-content: center;
+      }
+      @media (max-width: 480px) {
+        align-self: center;
+        width: 95%;
+        justify-content: flex-end;
+      }
+      @media (max-width: 435px) {
+        justify-content: center;
+      }
+      .leftPerson {
+        width: 275px;
+        height: 630px;
+        align-self: flex-end;
+        z-index: -10;
+        @media (max-width: 720px) {
+          width: 200px;
+          height: 450px;
+        }
+        @media (max-width: 585px) {
+          width: 170px;
+          height: auto;
+        }
+        @media (max-width: 480px) {
+          width: 130px;
+          height: 270px;
+        }
+        @media (max-width: 435px) {
+          margin-left: auto;
+          width: 100px;
+          height: 230px;
+        }
+        @media (max-width: 380px) {
+          width: 50px;
+          height: 120px;
+        }
+        @media (max-width: 320px) {
+          width: 50px;
+          height: 120px;
+        }
+      }
+      .rightPerson {
+        width: 440px;
+        height: 750px;
+        z-index: 10;
+        @media (max-width: 720px) {
+          width: 300px;
+          height: 550px;
+        }
+        @media (max-width: 585px) {
+          width: 250px;
+          height: 470px;
+        }
+        @media (max-width: 480px) {
+          width: 200px;
+          height: 330px;
+        }
+        @media (max-width: 435px) {
+          width: 150px;
+          height: 280px;
+        }
+        @media (max-width: 380px) {
+          width: 100px;
+          height: 160px;
+        }
+      }
+      .headingDiv {
+        position: absolute;
+        top: 30%;
+        transform: rotate(-5deg);
+        line-height: 1;
+        .heading1 {
+          font-family: "Luckiest Guy";
+          letter-spacing: 20px;
+          font-size: 10em;
+          font-weight: 900;
+          color: #fff;
+          text-transform: uppercase;
+          z-index: 15;
+          @media (max-width: 720px) {
+            font-size: 6em;
+          }
+          @media (max-width: 580px) {
+            font-size: 4em;
+          }
+          @media (max-width: 410px) {
+            font-size: 2em;
+            letter-spacing: 10px;
+          }
+        }
+        .heading2 {
+          font-family: "Luckiest Guy";
+          letter-spacing: 20px;
+
+          font-size: 10em;
+          font-weight: 900;
+          color: #000;
+          text-transform: uppercase;
+          margin-left: 300px;
+          z-index: -10;
+          @media (max-width: 720px) {
+            font-size: 6em;
+            margin-left: 250px;
+          }
+          @media (max-width: 580px) {
+            font-size: 4em;
+            margin-left: 200px;
+          }
+          @media (max-width: 410px) {
+            font-size: 2em;
+            letter-spacing: 10px;
+            margin-left: 100px;
+          }
+        }
+      }
+    }
+    .p {
+      color: #fff;
+      font-size: 26px;
+      align-self: center;
+      margin-top: 50px;
+    }
+  }
+  #textSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 100px;
+    .textSectionh1 {
+      width: 900px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 45px;
+      text-align: center;
+      @media (max-width: 900px) {
+        width: 95%;
+      }
+      @media (max-width: 400px) {
+        font-size: 35px;
+      }
+    }
+    .textSectionp1 {
+      width: 840px;
+      color: #fff;
+      font-weight: 500;
+      font-size: 20px;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 100px;
+      line-height: 1.8;
+      @media (max-width: 900px) {
+        width: 95%;
+      }
+    }
+  }
+  #sliderSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    .sliderSectionp1 {
+      width: 860px;
+      color: #fff;
+      font-weight: 400;
+      font-size: 45px;
+      text-align: center;
+      @media (max-width: 900px) {
+        width: 95%;
+      }
+    }
+    .line {
+      position: relative;
+      width: 80%;
+      height: 6px; /* Adjust the height of the line as needed */
+      background-color: #fff; /* Line color */
+      margin-top: 20px;
+    }
+
+    .circle {
+      width: 23px;
+      height: 23px;
+      background-color: #fff; /* Circle color */
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .circle:nth-child(1) {
+      left: 30px;
+      top: -8px; /* Adjust the positioning of the circles as needed */
+    }
+
+    .circle:nth-child(2) {
+      left: 50%;
+      transform: translateX(-50%);
+      top: -8px; /* Adjust the positioning of the circles as needed */
+    }
+
+    .circle:nth-child(3) {
+      right: 30px;
+      top: -8px; /* Adjust the positioning of the circles as needed */
+    }
+    .lineDiv {
+      display: flex;
+      width: 90%;
+      justify-content: space-between;
+      margin-top: 20px;
+      .linep {
+        color: #fff;
+        font-weight: 400;
+        font-size: 45px;
+        @media (max-width: 900px) {
+          font-size: 25px;
+        }
+      }
+    }
+    .endDiv {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+
+      h1 {
+        font-weight: 600;
+        font-size: 45px;
+        text-align: center;
+        color: #fff;
+      }
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        text-align: center;
+        color: #fff;
+        margin-top: 10px;
+      }
+    }
+  }
+  #secondSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    @media (max-width: 900px) {
+      width: 90%;
+      align-self: center;
+    }
+    .secondSectionh1 {
+      /*     width: 1100px; */
+      text-align: center;
+      font-size: 64px;
+      font-weight: 600;
+      color: #212121;
+      @media (max-width: 900px) {
+        font-size: 44px;
+      }
+      @media (max-width: 400px) {
+        font-size: 34px;
+        margin-bottom: 20px;
+      }
+    }
+    .secondSectionp1 {
+      text-align: center;
+      font-size: 36px;
+      font-weight: 500;
+      color: #212121;
+    }
+    .secondSectionp2 {
+      text-align: center;
+      font-size: 42px;
+      font-weight: 700;
+      color: #212121;
+      margin-top: 3em;
+    }
+    .articleMainDiv {
+      display: flex;
+      width: 90%;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      row-gap: 30px;
+      column-gap: 30px;
+      @media (max-width: 900px) {
+        justify-content: center;
+      }
+      .span1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+          color: #212121;
+          font-size: 12px;
+          font-weight: 400;
+        }
+      }
+      .span2 {
+        display: flex;
+        align-items: center;
+        img {
+          margin-right: 10px;
+        }
+        p {
+          color: #212121;
+          font-size: 12px;
+          font-weight: 400;
+        }
+      }
+    }
+    .articleDiv {
+      display: flex;
+      flex-direction: column;
+      width: 380px;
+      @media (max-width: 380px) {
+        width: 100%;
+      }
+      .mainImg {
+      }
+      .title {
+        font-size: 24px;
+        font-weight: 400;
+        color: #212121;
+        margin-top: 10px;
+      }
+      .desc {
+        font-size: 14px;
+        font-weight: 400;
+        color: #212121;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+/*<----------------------------------------------------Home:End----------------------------------------------------> */
+
+/*<----------------------------------------------------Footer:Start----------------------------------------------------> */
+#footer {
+  display: flex;
+  flex-direction: column;
+  .firstSection {
+    display: flex;
+    background-color: #e840cc;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 20px 0 20px 0;
+    .jellyImg {
+      width: 340px;
+      height: 440px;
+      @media (max-width: 380px) {
+        width: 240px;
+        height: 340px;
+      }
+    }
+    .headingDiv {
+      position: absolute;
+
+      transform: rotate(-5deg);
+      line-height: 1;
+      .heading1 {
+        font-family: "Luckiest Guy";
+        letter-spacing: 20px;
+        font-size: 10em;
+        font-weight: 900;
+        color: #fff;
+        text-transform: uppercase;
+        z-index: 15;
+        @media (max-width: 720px) {
+          font-size: 6em;
+        }
+        @media (max-width: 580px) {
+          font-size: 4em;
+        }
+        @media (max-width: 410px) {
+          font-size: 2em;
+          letter-spacing: 10px;
+        }
+      }
+      .heading2 {
+        font-family: "Luckiest Guy";
+        letter-spacing: 20px;
+
+        font-size: 10em;
+        font-weight: 900;
+        color: #000;
+        text-transform: uppercase;
+        margin-left: 300px;
+        z-index: -10;
+        @media (max-width: 720px) {
+          font-size: 6em;
+          margin-left: 250px;
+        }
+        @media (max-width: 580px) {
+          font-size: 4em;
+          margin-left: 200px;
+        }
+        @media (max-width: 410px) {
+          font-size: 2em;
+          letter-spacing: 10px;
+          margin-left: 100px;
+        }
+      }
+    }
+  }
+  .endSection {
+    display: flex;
+    width: 90%;
+    align-self: center;
+    margin: 30px 0 30px 0;
+    p {
+      font-weight: 400;
+      font-size: 11px;
+      color: #000000;
+    }
+  }
+}
+
+/*<----------------------------------------------------Footer:End----------------------------------------------------> */
