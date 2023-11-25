@@ -15,23 +15,23 @@ const Home = () => {
   const controlsLeft = useAnimation();
   const controlsRight = useAnimation();
   const controlsHeading = useAnimation();
-  const [refLeft, inViewLeft] = useInView({ threshold: 0.2 });
-  const [refRight, inViewRight] = useInView({ threshold: 0.2 });
+  const [refLeft, inViewLeft] = useInView({ threshold: 0.5 });
+  const [refRight, inViewRight] = useInView({ threshold: 0.5 });
   const [refHeading, inViewHeading] = useInView({ threshold: 0.2 });
 
   useEffect(() => {
     if (inViewLeft) {
-      controlsLeft.start({ x: 0, opacity: 1 });
+      controlsLeft.start({ y: 0, opacity: 1 });
     } else {
-      controlsLeft.start({ x: -200, opacity: 0 });
+      controlsLeft.start({ y: -200, opacity: 0 });
     }
   }, [controlsLeft, inViewLeft]);
 
   useEffect(() => {
     if (inViewRight) {
-      controlsRight.start({ x: 0, opacity: 1 });
+      controlsRight.start({ y: 0, opacity: 1 });
     } else {
-      controlsRight.start({ x: 200, opacity: 0 });
+      controlsRight.start({ y: -200, opacity: 0 });
     }
   }, [controlsRight, inViewRight]);
   useEffect(() => {
@@ -50,8 +50,8 @@ const Home = () => {
             alt=""
             className="leftPerson"
             variants={{
-              hidden: { opacity: 0, x: -200 },
-              show: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, y: -200 },
+              show: { opacity: 1, y: 0 },
             }}
             initial="hidden"
             animate={controlsLeft}
@@ -63,8 +63,8 @@ const Home = () => {
             alt=""
             className="rightPerson"
             variants={{
-              hidden: { opacity: 0, x: 200 },
-              show: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, y: -200 },
+              show: { opacity: 1, y: 0 },
             }}
             initial="hidden"
             animate={controlsRight}
@@ -83,7 +83,11 @@ const Home = () => {
             transition={{ duration: 0.5, delay: 0.7 }}
           >
             <motion.h1 className="heading1">Catch</motion.h1>
-            <motion.h1 className="heading2">Fish</motion.h1>
+            <motion.h1 className="heading2">
+              FI
+              <p>S</p>
+              <p>H</p>
+            </motion.h1>
           </motion.div>
         </div>
 

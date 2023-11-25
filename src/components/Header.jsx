@@ -69,7 +69,7 @@ const Header = () => {
             hidden: { opacity: 0, y: -50 },
             visible: { opacity: 1, y: 0 },
           }}
-          transition={{ duration: 0.5, delay: 0.5 }}
+          transition={{ duration: 0.3, delay: 0.1 }}
         >
           <Link>Home</Link>
         </motion.div>
@@ -78,7 +78,7 @@ const Header = () => {
             hidden: { opacity: 0, y: -50 },
             visible: { opacity: 1, y: 0 },
           }}
-          transition={{ duration: 0.5, delay: 0.6 }}
+          transition={{ duration: 0.3, delay: 0.4 }}
         >
           <Link>Amazon</Link>
         </motion.div>
@@ -87,7 +87,7 @@ const Header = () => {
             hidden: { opacity: 0, y: -50 },
             visible: { opacity: 1, y: 0 },
           }}
-          transition={{ duration: 0.5, delay: 0.7 }}
+          transition={{ duration: 0.3, delay: 0.45 }}
         >
           <Link>Services</Link>
         </motion.div>
@@ -96,7 +96,7 @@ const Header = () => {
             hidden: { opacity: 0, y: -50 },
             visible: { opacity: 1, y: 0 },
           }}
-          transition={{ duration: 0.5, delay: 0.8 }}
+          transition={{ duration: 0.3, delay: 0.5 }}
         >
           <Link>Meet the team</Link>
         </motion.div>
@@ -105,7 +105,7 @@ const Header = () => {
             hidden: { opacity: 0, y: -50 },
             visible: { opacity: 1, y: 0 },
           }}
-          transition={{ duration: 0.5, delay: 0.9 }}
+          transition={{ duration: 0.3, delay: 0.55 }}
         >
           <Link>Blog</Link>
         </motion.div>
@@ -115,7 +115,7 @@ const Header = () => {
           hidden: { opacity: 0, y: -50 },
           visible: { opacity: 1, y: 0 },
         }}
-        transition={{ duration: 0.5, delay: 1 }}
+        transition={{ duration: 0.3, delay: 0.6 }}
         className="desktopLinkDiv"
       >
         <Link>Contact</Link>
